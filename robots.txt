@@ -1,0 +1,52 @@
+User-agent: *
+Disallow: /images/pic02.jpg 
+
+User-agent: *
+Disallow: /images/pic03.jpg 
+
+User-agent: *
+Disallow: /images/pic04.jpg 
+
+User-agent: *
+Disallow: /images/pic05.jpg 
+
+User-agent: *
+Disallow: /images/pic06.jpg 
+
+User-agent: *
+Disallow: /images/pic07.jpg 
+
+User-agent: *
+Disallow: /images/pic08.jpg 
+
+User-agent: *
+Disallow: /images/pic09.jpg 
+
+User-agent: *
+Disallow: /images/pic10.jpg 
+
+User-agent: *
+Disallow: /images/pic11.jpg 
+
+User-agent: *
+Disallow: /images/banner.jpg
+
+User-agent: *
+Disallow: /images/old/pic02.jpg
+
+User-agent: *
+Disallow: /images/old/pic03.jpg
+
+User-agent: *
+Disallow: /images/error/error01.jpg
+
+User-agent: *
+Disallow: /images/error/error02.jpg
+
+User-agent: *
+Disallow: /images/error/error03.jpg
+
+User-agent: CuteStat
+Disallow: /
+
+Sitemap: https://michadenheijer.nl/sitemap.xml

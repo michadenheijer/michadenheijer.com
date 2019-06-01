@@ -1,0 +1,65 @@
+# no .html at the end
+RewriteEngine On 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME}.html -f 
+RewriteRule ^(.*)$ $1.html [NC,L]
+
+#Force non-www:
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www\.michadenheijer\.com [NC]
+RewriteRule ^(.*)$ https://michadenheijer.com/$1 [L,R=301]
+
+# dont allow to visit index.html
+RewriteRule ^(.*)index\.(php|html?)$ /$1 [R=301,NC,L]
+
+# security headers
+<IfModule mod_headers.c> 
+  Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set X-Xss-Protection "1; mode=block"
+  Header always set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "no-referrer-when-downgrade"
+  Header set Content-Security-Policy "default-src 'self'; base-uri 'self'; script-src 'self' ajax.cloudflare.com;"
+  Header set Connection keep-alive
+</IfModule>
+
+# gzip for faster internet
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+
+# cache for better speeds
+<filesMatch ".(css|jpg|jpeg|png|gif|js|ico|mp4|woff|woff2)$">
+  Header set Cache-Control "max-age=2592000, public"
+</filesMatch>
+
+# when there's an error
+ErrorDocument 403 /error/403.html
+ErrorDocument 404 /error/404.html
+ErrorDocument 500 /error/500.html
+
+# don't check folders
+Options -Indexes
+
+# right way for charset
+Content-Type: text/html; charset=UTF-8
+AddType application/font-woff2           woff2
+
+# redirects
+Redirect 301 /index /index.html
+Redirect 301 /pinguins https://pinguins.michadenheijer.com/
+Redirect 301 /crosspointapp https://crosspoint.michadenheijer.com/
+Redirect 301 /projecten /nl/projecten
+Redirect 301 /sociale-media /nl/sociale-media
+Redirect 301 /assets/css/main16062018.css /assets/css/main.css
+Redirect 301 /assets/css/main20062018.css /assets/css/main.css
+Redirect 301 /profile /images/hotlink-ok/profile.jpg
+Redirect 301 /profile.jpg /images/hotlink-ok/profile.jpg
+Redirect 301 /projects /my-projects
+Redirect 301 /projects/ /my-projects
