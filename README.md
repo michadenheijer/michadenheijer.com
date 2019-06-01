@@ -1,10 +1,10 @@
 # MichaDenHeijer.com
-[![Uptime Robot status](https://img.shields.io/uptimerobot/ratio/7/m780835373-dfca08c8bd2fab0cdf3dfa82.svg)](https://uptimerobot.com/) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/147b6e85df864414a88995b3e4dcb67f)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=michadenheijer/michadenheijer.com&amp;utm_campaign=Badge_Grade)
+[![Uptime Robot status](https://img.shields.io/uptimerobot/ratio/7/m780835373-dfca08c8bd2fab0cdf3dfa82.svg)](https://uptimerobot.com/) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/147b6e85df864414a88995b3e4dcb67f)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=michadenheijer/michadenheijer.com&amp;utm_campaign=Badge_Grade) [![Netlify Status](https://api.netlify.com/api/v1/badges/7b9cc568-6c03-4007-8dac-ff34b0833765/deploy-status)](https://app.netlify.com/sites/michadenheijerdev/deploys)
 
 This is my personal website, it uses a theme from [TEMPLATED.co](http://TEMPLATED.co), so if you want to use this theme, download it from their website.
 
 ## Editing
-This website uses HTML/CSS/JS (and PHP I'm not proud of it), so to edit you just need a text editor.
+This website uses HTML/CSS/JS, so to edit you just need a text editor.
 
 ### Step 1: Clone the project
 Clone the project so you can edit it
@@ -32,20 +32,17 @@ $ git push -u origin master
 ```
 
 ## Deploy
-This repository automatically deploys itself when there's a new version pushed to GitHub using [Buddy](http://buddy.works/).
+This repository automatically deploys itself when there's a new version pushed to GitHub using [Netlify](https://netlify.com/).
 
 ## Changes I made
 - Combined all CSS files
 - Changed some CSS for better iPad view
 - Changed the video and pictures
-- Added a PHP script to make the contact form work
 - Removed the form from every page
-- Removed @import
 - Changed H2 for H1 on some pages
 - Added language detection script
-- Added favicon, iOS-icon and Andriond-icon
+- Added favicon, iOS-icon and Android-icon
 - Added Security Headers
-- Own jQuery build
 - Added my own contentph
 
 ## Credits
