@@ -89,36 +89,33 @@
                     <div class="content">
                         <h2 class="align-center">Get in Touch</h2>
                         <hr />
-                        <form action="https://postmail.invotes.com/send" method="POST" id="get-in-touch">
+                        <form data-netlify="true" method="POST" id="get-in-touch" action="/send">
                             <div class="field half first">
-                                <label for="name">Naam</label>
-                                <input name="name" id="name" type="text" placeholder="Jouw naam">
+                                <label for="name">Name</label>
+                                <input name="name" id="name" type="text" placeholder="Your name">
                             </div>
                             <div class="field half">
                                 <label for="email">Email</label>
-                                <input name="reply_to" id="email" type="email" placeholder="Jouw email adres">
+                                <input name="reply_to" id="email" type="email" placeholder="Your email address">
                             </div>
                             <div class="field">
-                                <label for="dept">Reden voor contact</label>
+                                <label for="dept">Reason for contact</label>
                                 <div class="select-wrapper">
                                     <select name="subject" id="dept">
-												<option value="">- Opties -</option>
-												<option value="Ads">Reclame</option>
-												<option value="Business">Business deal</option>
-												<option value="Question">Vraag</option>
-												<option value="Other">Ander</option>
+												<option value="">- Category -</option>
+												<option value="Ads">Ad</option>
+												<option value="Business">Business offer</option>
+												<option value="Question">Question</option>
+												<option value="Other">Other</option>
 											</select>
                                 </div>
                             </div>
                             <div class="field">
-                                <label for="message">Bericht</label>
-                                <textarea name="text" id="message" rows="6" placeholder="Bericht"></textarea>
+                                <label for="message">Message</label>
+                                <textarea name="text" id="message" rows="6" placeholder="Message"></textarea>
                             </div>
-                            <input type="hidden" name="access_token" value="s6jxygd0zrpos5cldu19znxi" />
-                            <input type="hidden" name="success_url" value="/send" />
-                            <input type="hidden" name="error_url" value="/failed" />
                             <ul class="actions align-center">
-                                <li><input value="Verstuur bericht" class="button special" type="submit"></li>
+                                <li><input value="Send message" class="button special" type="submit"></li>
                             </ul>
                         </form>
                     </div>

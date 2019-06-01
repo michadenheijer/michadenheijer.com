@@ -151,14 +151,14 @@
                     <div class="content">
                         <h2 class="align-center">Contact</h2>
                         <hr/>
-                        <form action="https://postmail.invotes.com/send" method="POST" id="get-in-touch">
+                        <form data-netlify="true" method="POST" id="get-in-touch" action="/send">
                             <div class="field half first">
                                 <label for="name">Naam</label>
                                 <input name="name" id="name" type="text" placeholder="Jouw naam">
                             </div>
                             <div class="field half">
                                 <label for="email">Email</label>
-                                <input name="reply_to" id="email" type="email" placeholder="Jouw email adres">
+                                <input name="reply_to" id="email" type="email" placeholder="Jouw email address">
                             </div>
                             <div class="field">
                                 <label for="dept">Reden voor contact</label>
@@ -166,9 +166,9 @@
                                     <select name="subject" id="dept">
 												<option value="">- Opties -</option>
 												<option value="Ads">Reclame</option>
-												<option value="Business">Business deal</option>
+												<option value="Business">Zaken deal</option>
 												<option value="Question">Vraag</option>
-												<option value="Other">Ander</option>
+												<option value="Other">Overig</option>
 											</select>
                                 </div>
                             </div>
@@ -176,9 +176,6 @@
                                 <label for="message">Bericht</label>
                                 <textarea name="text" id="message" rows="6" placeholder="Bericht"></textarea>
                             </div>
-                            <input type="hidden" name="access_token" value="s6jxygd0zrpos5cldu19znxi" />
-                            <input type="hidden" name="success_url" value="/send" />
-                            <input type="hidden" name="error_url" value="/failed" />
                             <ul class="actions align-center">
                                 <li><input value="Verstuur bericht" class="button special" type="submit"></li>
                             </ul>

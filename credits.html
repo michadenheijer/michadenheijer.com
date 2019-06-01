@@ -91,21 +91,21 @@
                     <div class="content">
                         <h2 class="align-center">Get in Touch</h2>
                         <hr />
-                        <form action="assets/php/mail.php" method="POST" id="get-in-touch">
+                        <form data-netlify="true" method="POST" id="get-in-touch" action="/send">
                             <div class="field half first">
                                 <label for="name">Name</label>
                                 <input name="name" id="name" type="text" placeholder="Your name">
                             </div>
                             <div class="field half">
                                 <label for="email">Email</label>
-                                <input name="email" id="email" type="email" placeholder="Your email adress">
+                                <input name="reply_to" id="email" type="email" placeholder="Your email address">
                             </div>
                             <div class="field">
                                 <label for="dept">Reason for contact</label>
                                 <div class="select-wrapper">
-                                    <select name="reason" id="dept">
+                                    <select name="subject" id="dept">
 												<option value="">- Category -</option>
-												<option value="Ads">Ads</option>
+												<option value="Ads">Ad</option>
 												<option value="Business">Business offer</option>
 												<option value="Question">Question</option>
 												<option value="Other">Other</option>
@@ -114,10 +114,10 @@
                             </div>
                             <div class="field">
                                 <label for="message">Message</label>
-                                <textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+                                <textarea name="text" id="message" rows="6" placeholder="Message"></textarea>
                             </div>
                             <ul class="actions align-center">
-                                <li><input value="Send Message" class="button special" type="submit"></li>
+                                <li><input value="Send message" class="button special" type="submit"></li>
                             </ul>
                         </form>
                     </div>
