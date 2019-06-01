@@ -7,3 +7,5 @@
 /assets/css/main20062018.css /assets/css/main.css 301
 /projects /my-projects 301
 /projects/ /my-projects 301
+http://michadenheijerdev.netlify.com/* https://michadenheijer.com/:splat 301!
+https://michadenheijerdev.netlify.com/* https://michadenheijer.com/:splat 301!
