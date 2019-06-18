@@ -7304,5 +7304,5 @@ body.is-loading #banner:before {
 }
 
 .cc-window {
-    z-index: 100000;
+    z-index: 100000 !important;
 }
