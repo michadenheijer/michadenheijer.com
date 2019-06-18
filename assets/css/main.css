@@ -7311,3 +7311,8 @@ body.is-loading #banner:before {
 .cc-window {
     z-index: 1000000 !important;
 }
+
+.cc-revoke.cc-top {
+    left: auto !important;
+    right: 3em !important;
+}
