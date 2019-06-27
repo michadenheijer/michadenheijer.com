@@ -3860,7 +3860,7 @@ body.subpage {
     -webkit-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
-    background-image: url("../../images/banner.jpg");
+    //background-image: url("../../images/banner.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -3871,6 +3871,30 @@ body.subpage {
     position: relative;
     text-align: center;
     overflow: hidden;
+}
+
+@media (max-width: 600px) {
+    #banner {
+        background-image: url("../../images/banner-400.jpg");
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+    #banner {
+        background-image: url("../../images/banner-800.jpg");
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1400px) {
+    #banner {
+        background-image: url("../../images/banner-1200.jpg");
+    }
+}
+
+@media (min-width: 1401px) {
+    #banner {
+        background-image: url("../../images/banner.jpg");
+    }
 }
 
 #banner .inner {

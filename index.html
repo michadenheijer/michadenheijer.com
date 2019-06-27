@@ -21,6 +21,8 @@
     <link rel="alternate" href="https://michadenheijer.com" hreflang="en" />
     <link rel="alternate" href="https://michadenheijer.com/" hreflang="x-default" />
     <link rel="alternate" href="https://michadenheijer.com/nl/" hreflang="nl" />
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <script>
         (function(w, d, s, l, i) {
             w[l] = w[l] || [];
@@ -36,7 +38,6 @@
                 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-NDB8B6K');
-
     </script>
 </head>
 
@@ -75,7 +76,7 @@
         <div class="inner">
             <div>
                 <div class="box">
-                    <div class="image fit"> <img src="images/michadenheijer.jpg" alt="Micha den Heijer" /></div>
+                    <div class="image fit"> <img srcset="images/michadenheijer-400.jpg 400w, images/michadenheijer-800.jpg 800w, images/michadenheijer.jpg 1080w" src="images/michadenheijer.jpg" sizes="90vw" alt="Micha den Heijer" /></div>
                     <div class="content">
                         <header class="align-center">
                             <h2>About</h2>
@@ -209,12 +210,10 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery.scrollex@0.2.1/jquery.scrollex.min.js" integrity="sha384-yUZ+bxBG56Ko5b/py3X3F2UCK9vl2mdIKldSGHDAZPdBy85WW7mXqp+H2KgN48ds" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/gh/ajlkn/skel@3e0e17d1a97a79b40e6c792d1d6d670ac269af16/src/skel.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/language-nl.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ajlkn/skel@v3.0.1/dist/skel.min.js" integrity="sha384-j4Ixsk3DNo2KIAnK9/UxuyETV/Z+xgbw8xmUbGv1+krOf49mntDAQ2A2gcHrQ9fD" crossorigin="anonymous"></script>
+    <script src="assets/js/util.js" async></script>
+    <script src="assets/js/main.js" async></script>
+    <script src="assets/js/language-nl.js" async></script>
     <link href="https://fonts.googleapis.com/css?family=Taviraj:300,400,700&display=swap" rel="stylesheet">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDB8B6K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-</body>
-
-</html>
+</body></html>
