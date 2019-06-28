@@ -3230,7 +3230,7 @@ table.alt tbody tr td {
 .wrapper.style3 {
     background-color: #000;
     color: #bfbfbf;
-    background-image: url(../../images/bg.jpg);
+    /*background-image: url(../../images/bg.jpg);*/
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -4422,6 +4422,7 @@ body.is-loading #banner:before {
     opacity: 0.97;
     bottom: 0px;
     height: 3.5em;
+    display: none;
 }
 
 #lang-message-text {
@@ -5089,6 +5090,7 @@ body.is-loading #banner:before {
 .fa-leaf:before {
     content: "\f06c"
 }
+
 
 .fa-fire:before {
     content: "\f06d"
@@ -7338,4 +7340,13 @@ body.is-loading #banner:before {
 .cc-revoke.cc-top {
     left: auto !important;
     right: 4em !important;
+}
+
+#lang {
+    z-index: 100000;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    bottom: 0;
+    height: 3.5em;
 }
