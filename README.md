@@ -79,14 +79,14 @@ This repository automatically deploys itself when there's a new version pushed t
  - Video: 
    - Coverr: [Coverr License](https://coverr.co/license)
  - Images:
-   - Pixabay: [Creative Commons Attribution 0 (1.0)](https://creativecommons.org/publicdomain/zero/1.0/)
+   - Pixabay: [Pixabay License](https://pixabay.com/nl/service/terms/#license)
    - Pexels: [Pexels License](https://www.pexels.com/photo-license/)
    - Unsplash: [Unsplash License](https://unsplash.com/license)
  - Scripts:
-   - jQuery: [MIT License](https://tldrlegal.com/license/mit-license)
-   - jQuery.Scrollex: [MIT License](https://tldrlegal.com/license/mit-license)
+   - jQuery: [MIT License](https://github.com/jquery/jquery/blob/master/LICENSE.txt)
+   - jQuery.Scrollex: [MIT License](https://github.com/ajlkn/jquery.scrollex#license)
    - jQuery.Scrolly: [MIT License](https://tldrlegal.com/license/mit-license)
-   - Skel: [MIT License](https://tldrlegal.com/license/mit-license)
+   - Skel: [MIT License](https://github.com/ajlkn/skel#license)
+   - Vanilla Lazyload: [MIT License](https://github.com/verlok/lazyload/blob/master/LICENSE)
  - Text:
-   - Micha den Heijer: [Creative Commons Attribution (1.0)](https://creativecommons.org/publicdomain/zero/1.0/)
-   
+   - Taviraj: [SIL OFL](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
