@@ -1,0 +1,18 @@
+# License
+ - Theme: 
+   - TEMPLATED.co: [Creative Commons Attribution 3.0](https://templated.co/license)
+ - Video: 
+   - Coverr: [Coverr License](https://coverr.co/license)
+ - Images:
+   - Pixabay: [Pixabay License](https://pixabay.com/nl/service/terms/#license)
+   - Pexels: [Pexels License](https://www.pexels.com/photo-license/)
+   - Unsplash: [Unsplash License](https://unsplash.com/license)
+ - Scripts:
+   - jQuery: [MIT License](https://github.com/jquery/jquery/blob/master/LICENSE.txt)
+   - jQuery.Scrollex: [MIT License](https://github.com/ajlkn/jquery.scrollex#license)
+   - jQuery.Scrolly: [MIT License](https://tldrlegal.com/license/mit-license)
+   - Skel: [MIT License](https://github.com/ajlkn/skel#license)
+   - Vanilla Lazyload: [MIT License](https://github.com/verlok/lazyload/blob/master/LICENSE)
+ - Text:
+   - Taviraj: [SIL OFL](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
+   - Actual content: [The Unlicense](https://choosealicense.com/licenses/unlicense/)
