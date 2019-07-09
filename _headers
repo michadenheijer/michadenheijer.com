@@ -12,4 +12,6 @@
   X-Permitted-Cross-Domain-Policies: none
 /
   Link: </images/bg.jpg>; rel=preload; as=image
+/nl/
+  Link: </images/bg.jpg>; rel=preload; as=image
   
