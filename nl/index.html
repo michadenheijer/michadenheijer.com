@@ -37,7 +37,6 @@
                 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-NDB8B6K');
-
     </script>
 </head>
 
@@ -63,7 +62,7 @@
             <h1>Micha den Heijer</h1>
             <p>Ik ben Micha den Heijer, een middelbare
                 <!-- htmlmin:ignore -->scholier <br />die websites
-                <!-- htmlmin:ignore --> en games maakt.....</p>
+                <!-- htmlmin:ignore -->en games maakt.....</p>
             <ul class="icons">
                 <li><a href="https://www.instagram.com/michadenheijer/" class="icon fa-instagram" target="=_blank"><span class="label">Instagram</span></a></li>
                 <li><a href="https://github.com/michadenheijer" class="icon fa-github"><span class="label" target="=_blank">Github</span></a></li>
@@ -76,7 +75,14 @@
         <div class="inner">
             <div>
                 <div class="box">
-                    <div class="image fit"> <img src="../images/michadenheijer.jpg" alt="Micha den Heijer" /></div>
+                    <div class="image fit">
+                        <picture>
+                            <source media="(max-width: 540px)" type="image/webp" srcset="../images/michadenheijer-400.webp">
+                            <source media="(max-width: 1000px)" type="image/webp" srcset="../images/michadenheijer-800.webp">
+                            <source type="image/webp" srcset="../images/michadenheijer.webp">
+                            <img srcset="../images/michadenheijer-400.jpg 400w, ../images/michadenheijer-800.jpg 800w, ../images/michadenheijer.jpg 1080w" src="../images/michadenheijer.jpg" sizes="90vw" alt="Micha den Heijer" />
+                        </picture>
+                    </div>
                     <div class="content">
                         <header class="align-center">
                             <h2>Over</h2>
@@ -130,7 +136,12 @@
             <div class="grid-style">
                 <div>
                     <div class="box">
-                        <div class="image fit"> <img data-src="../images/pic02.jpg" alt="Instagram" class="lazy" /></div>
+                        <div class="image fit">
+                            <picture>
+                                <source type="image/webp" data-srcset="../images/pic02.webp">
+                                <img data-src="../images/pic02.jpg" alt="Instagram" class="lazy" />
+                            </picture>
+                        </div>
                         <div class="content">
                             <header class="align-center">
                                 <h2>Instagram</h2>
@@ -143,7 +154,12 @@
                 </div>
                 <div>
                     <div class="box">
-                        <div class="image fit"> <img data-src="../images/pic03.jpg" alt="Twitter" class="lazy" /></div>
+                        <div class="image fit">
+                            <picture>
+                                <source type="image/webp" data-srcset="../images/pic03.webp">
+                                <img data-src="../images/pic03.jpg" alt="LinkedIn" class="lazy" />
+                            </picture>
+                        </div>
                         <div class="content">
                             <header class="align-center">
                                 <h2>LinkedIn</h2>
@@ -215,7 +231,6 @@
         window.lazyLoadOptions = {
             elements_selector: ".lazy"
         };
-
     </script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js" async></script>
     <script src="../assets/js/jquery.scrolly.min.js"></script>
