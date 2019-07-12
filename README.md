@@ -69,11 +69,10 @@ This repository automatically deploys itself when there's a new version pushed t
   - [Skel](https://github.com/ajlkn/skel/blob/master/README.md)
   - [TEMPLATED.co](http://templated.co)
 - Hosting/Deployment: 
-  - [TransIP](http://transip.nl)
-  - [Cloudflare](http://cloudflare.com)
-  - [Buddy](http://buddy.works/)
+  - [Netlify](http://netlify.com)
   
 ## License
+
  - Theme: 
    - TEMPLATED.co: [Creative Commons Attribution 3.0](https://templated.co/license)
  - Video: 
@@ -90,3 +89,6 @@ This repository automatically deploys itself when there's a new version pushed t
    - Vanilla Lazyload: [MIT License](https://github.com/verlok/lazyload/blob/master/LICENSE)
  - Text:
    - Taviraj: [SIL OFL](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
+   - Font Awesome (4.6.3): [SIL OFL](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
+   - Actual content: [The Unlicense](https://choosealicense.com/licenses/unlicense/)
+
