@@ -16,15 +16,6 @@
     <meta name="application-name" content="M. den Heijer">
     <meta name="apple-mobile-web-app-title" content="M. den Heijer">
     <link rel='stylesheet' type='text/css' href='assets/css/main.css?v=1.4.2' />
-    <script>
-        var webPsupport = (function() {
-            var webP = new Image();
-            webP.onload = WebP.onerror = function() {
-                callback(webP.height == 2);
-            };
-            webP.src = 'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
-        });
-    </script>
     <link rel="alternate" href="https://michadenheijer.com" hreflang="en" />
     <link rel="alternate" href="https://michadenheijer.com/" hreflang="x-default" />
     <link rel="alternate" href="https://michadenheijer.com/nl/" hreflang="nl" />
@@ -249,6 +240,13 @@
                 section[i].setAttribute("data-bg", value);
             }
         }
+        var webPsupport = (function() {
+            var webP = new Image();
+            webP.onload = WebP.onerror = function() {
+                callback(webP.height == 2);
+            };
+            webP.src = 'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
+        });
         if (width < 600) {
             webPsupport ? changeBg("url(\"/images/bg-400.webp\")") : changeBg("url(\"/images/bg-400.jpg\")");
         } else if (width < 1000) {
