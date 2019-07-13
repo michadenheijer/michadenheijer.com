@@ -16,6 +16,15 @@
     <meta name="application-name" content="M. den Heijer">
     <meta name="apple-mobile-web-app-title" content="M. den Heijer">
     <link rel='stylesheet' type='text/css' href='assets/css/main.css?v=1.4.2' />
+    <script>
+        var webPsupport = (function() {
+            var webP = new Image();
+            webP.onload = WebP.onerror = function() {
+                callback(webP.height == 2);
+            };
+            webP.src = 'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
+        });
+    </script>
     <link rel="alternate" href="https://michadenheijer.com" hreflang="en" />
     <link rel="alternate" href="https://michadenheijer.com/" hreflang="x-default" />
     <link rel="alternate" href="https://michadenheijer.com/nl/" hreflang="nl" />
@@ -228,7 +237,27 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery.scrollex@0.2.1/jquery.scrollex.min.js" integrity="sha384-yUZ+bxBG56Ko5b/py3X3F2UCK9vl2mdIKldSGHDAZPdBy85WW7mXqp+H2KgN48ds" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/skel-framework-npm@1.0.1/dist/skel.min.js" integrity="sha384-j4Ixsk3DNo2KIAnK9/UxuyETV/Z+xgbw8xmUbGv1+krOf49mntDAQ2A2gcHrQ9fD" crossorigin="anonymous"></script>
     <script>
-        // Set the options to make LazyLoad self-initialize	
+        var elem = (document.compatMode === "CSS1Compat") ?
+            document.documentElement :
+            document.body;
+
+        var width = elem.clientWidth,
+            section = document.getElementsByClassName("style3");
+
+        function changeBg(value) {
+            for (i = 0; i < section.length; i++) {
+                section[i].setAttribute("data-bg", value);
+            }
+        }
+        if (width < 600) {
+            webPsupport ? changeBg("url(\"/images/bg-400.webp\")") : changeBg("url(\"/images/bg-400.jpg\")");
+        } else if (width < 1000) {
+            webPsupport ? changeBg("url(\"/images/bg-800.webp\")") : changeBg("url(\"/images/bg-800.jpg\")");
+        } else if (width < 1400) {
+            webPsupport ? changeBg("url(\"/images/bg-1280.webp\")") : changeBg("url(\"/images/bg-1280.jpg\")");
+        } else {
+            webPsupport ? changeBg("url(\"/images/bg.webp\")") : changeBg("url(\"/images/bg.jpg\")");
+        }
         window.lazyLoadOptions = {
             elements_selector: ".lazy"
         };

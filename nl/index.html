@@ -227,7 +227,34 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery.scrollex@0.2.1/jquery.scrollex.min.js" integrity="sha384-yUZ+bxBG56Ko5b/py3X3F2UCK9vl2mdIKldSGHDAZPdBy85WW7mXqp+H2KgN48ds" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/skel-framework-npm@1.0.1/dist/skel.min.js" integrity="sha384-j4Ixsk3DNo2KIAnK9/UxuyETV/Z+xgbw8xmUbGv1+krOf49mntDAQ2A2gcHrQ9fD" crossorigin="anonymous"></script>
     <script>
-        // Set the options to make LazyLoad self-initialize	
+        var elem = (document.compatMode === "CSS1Compat") ?
+            document.documentElement :
+            document.body;
+
+        var width = elem.clientWidth,
+            section = document.getElementsByClassName("style3");
+
+        function changeBg(value) {
+            for (i = 0; i < section.length; i++) {
+                section[i].setAttribute("data-bg", value);
+            }
+        }
+        var webPsupport = (function() {
+            var webP = new Image();
+            webP.onload = WebP.onerror = function() {
+                callback(webP.height == 2);
+            };
+            webP.src = 'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
+        });
+        if (width < 600) {
+            webPsupport ? changeBg("url(\"/images/bg-400.webp\")") : changeBg("url(\"/images/bg-400.jpg\")");
+        } else if (width < 1000) {
+            webPsupport ? changeBg("url(\"/images/bg-800.webp\")") : changeBg("url(\"/images/bg-800.jpg\")");
+        } else if (width < 1400) {
+            webPsupport ? changeBg("url(\"/images/bg-1280.webp\")") : changeBg("url(\"/images/bg-1280.jpg\")");
+        } else {
+            webPsupport ? changeBg("url(\"/images/bg.webp\")") : changeBg("url(\"/images/bg.jpg\")");
+        }
         window.lazyLoadOptions = {
             elements_selector: ".lazy"
         };
@@ -239,6 +266,4 @@
     <script src="../assets/js/language-en.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Taviraj:300,400,700&display=swap" rel="stylesheet">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDB8B6K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-</body>
-
-</html>
+</body></html>
