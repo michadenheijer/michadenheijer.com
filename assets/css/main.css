@@ -4615,6 +4615,7 @@ body.is-loading #banner:before {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
+
     100% {
         -webkit-transform: rotate(359deg);
         transform: rotate(359deg);
@@ -4626,6 +4627,7 @@ body.is-loading #banner:before {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
+
     100% {
         -webkit-transform: rotate(359deg);
         transform: rotate(359deg);
@@ -4707,17 +4709,7 @@ body.is-loading #banner:before {
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
 
-fa-external-link,
-fa-instagram,
-fa-github,
-fa-linkedin,
-fa-close,
-fa-envelope,
-fa-bars,
-fa-globe,
-fa-bitbucket,
-fa-gitlab,
-fa-snapchat .fa-external-link:before {
+.fa-external-link:before {
     content: "\f08e";
 }
 
