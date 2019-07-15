@@ -15,5 +15,5 @@
    - Vanilla Lazyload: [MIT License](https://github.com/verlok/lazyload/blob/master/LICENSE)
  - Text:
    - Taviraj: [SIL OFL](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
-   - Font Awesome (4.6.3): [SIL OFL](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
+   - Font Awesome (4.7.0): [SIL OFL](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
    - Actual content: [The Unlicense](https://choosealicense.com/licenses/unlicense/)
