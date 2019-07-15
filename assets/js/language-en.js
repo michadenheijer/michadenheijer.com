@@ -8,7 +8,11 @@ $(document).ready(function () {
 });
 
 $("#button-close").click(function () {
-    $(message).hide(1500);
+    message.style.transition = '0.8s';
+    message.style.opacity = 0;
+    setTimeout(function () {
+        message.style.display = "none";
+    }, 800);
 });
 
 $("#button-en").click(function () {
@@ -16,7 +20,7 @@ $("#button-en").click(function () {
 });
 
 $("#button-en-pr").click(function () {
-    window.location.href = "https://michadenheijer.com/projects"
+    window.location.href = "https://michadenheijer.com/my-projects"
 });
 
 $("#button-en-sm").click(function () {
