@@ -12,7 +12,11 @@ $(document).ready(function () {
 });
 
 $("#button-close").click(function () {
-    $(message).hide(1500);
+    message.style.transition = '0.8s';
+    message.style.opacity = 0;
+    setTimeout(function () {
+        message.style.display = "none";
+    }, 800);
 });
 
 $("#button-nl").click(function () {
