@@ -1,9 +1,0 @@
-#lang-message {
-    display: none !important;
-}
-
-#no-script {
-    background-color: red;
-    text-align: center;
-    margin-bottom: -30px;
-}
