@@ -37,6 +37,7 @@
                 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-NDB8B6K');
+
     </script>
 </head>
 
@@ -64,9 +65,9 @@
                 <!-- htmlmin:ignore -->scholier <br />die websites
                 <!-- htmlmin:ignore -->en games maakt.....</p>
             <ul class="icons">
-                <li><a href="https://www.instagram.com/michadenheijer/" class="icon fa-instagram" target="=_blank"><span class="label">Instagram</span></a></li>
-                <li><a href="https://github.com/michadenheijer" class="icon fa-github"><span class="label" target="=_blank">Github</span></a></li>
-                <li><a href="https://www.linkedin.com/in/michadenheijer" class="icon fa-linkedin" target="=_blank"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://www.instagram.com/michadenheijer/" class="icon fa-instagram" target="_blank"><span class="label" rel="noopener">Instagram</span></a></li>
+                <li><a href="https://github.com/michadenheijer" class="icon fa-github"><span class="label" target="_blank" rel="noopener">Github</span></a></li>
+                <li><a href="https://www.linkedin.com/in/michadenheijer" class="icon fa-linkedin" target="_blank" rel="noopener"><span class="label">LinkedIn</span></a></li>
             </ul>
             <a href="#one" class="button special scrolly">Verder</a>
         </div>
@@ -227,7 +228,22 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery.scrollex@0.2.1/jquery.scrollex.min.js" integrity="sha384-yUZ+bxBG56Ko5b/py3X3F2UCK9vl2mdIKldSGHDAZPdBy85WW7mXqp+H2KgN48ds" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/skel-framework-npm@1.0.1/dist/skel.min.js" integrity="sha384-j4Ixsk3DNo2KIAnK9/UxuyETV/Z+xgbw8xmUbGv1+krOf49mntDAQ2A2gcHrQ9fD" crossorigin="anonymous"></script>
     <script type="text/javascript">
-        var elem="CSS1Compat"===document.compatMode?document.documentElement:document.body,width=elem.clientWidth,section=document.getElementsByClassName("style3");function changeBg(e){for(i=0;i<section.length;i++)section[i].setAttribute("data-bg",e)}function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}width<600?canUseWebP()?changeBg('url("/images/bg-400.webp")'):changeBg('url("/images/bg-400.jpg")'):width<1e3?canUseWebP()?changeBg('url("/images/bg-800.webp")'):changeBg('url("/images/bg-800.jpg")'):width<1400?canUseWebP()?changeBg('url("/images/bg-1280.webp")'):changeBg('url("/images/bg-1280.jpg")'):canUseWebP()?changeBg('url("/images/bg.webp")'):changeBg('url("/images/bg.jpg")'),window.lazyLoadOptions={elements_selector:".lazy"};
+        var elem = "CSS1Compat" === document.compatMode ? document.documentElement : document.body,
+            width = elem.clientWidth,
+            section = document.getElementsByClassName("style3");
+
+        function changeBg(e) {
+            for (i = 0; i < section.length; i++) section[i].setAttribute("data-bg", e)
+        }
+
+        function canUseWebP() {
+            var e = document.createElement("canvas");
+            return !(!e.getContext || !e.getContext("2d")) && 0 == e.toDataURL("image/webp").indexOf("data:image/webp")
+        }
+        width < 600 ? canUseWebP() ? changeBg('url("/images/bg-400.webp")') : changeBg('url("/images/bg-400.jpg")') : width < 1e3 ? canUseWebP() ? changeBg('url("/images/bg-800.webp")') : changeBg('url("/images/bg-800.jpg")') : width < 1400 ? canUseWebP() ? changeBg('url("/images/bg-1280.webp")') : changeBg('url("/images/bg-1280.jpg")') : canUseWebP() ? changeBg('url("/images/bg.webp")') : changeBg('url("/images/bg.jpg")'), window.lazyLoadOptions = {
+            elements_selector: ".lazy"
+        };
+
     </script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js" async></script>
     <script src="../assets/js/jquery.scrolly.min.js"></script>
@@ -236,4 +252,6 @@
     <script src="../assets/js/language-en.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Taviraj:300,400,700&display=swap" rel="stylesheet">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDB8B6K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-</body></html>
+</body>
+
+</html>
