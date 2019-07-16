@@ -1,5 +1,5 @@
 # MichaDenHeijer.com
-[![Uptime Robot status](https://img.shields.io/uptimerobot/ratio/7/m780835373-dfca08c8bd2fab0cdf3dfa82.svg)](https://uptimerobot.com/) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/147b6e85df864414a88995b3e4dcb67f)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=michadenheijer/michadenheijer.com&amp;utm_campaign=Badge_Grade) [![Netlify Status](https://api.netlify.com/api/v1/badges/7b9cc568-6c03-4007-8dac-ff34b0833765/deploy-status)](https://app.netlify.com/sites/michadenheijerdev/deploys)
+[![Uptime Robot status](https://img.shields.io/uptimerobot/ratio/7/m780835373-dfca08c8bd2fab0cdf3dfa82.svg)](https://uptimerobot.com/) [![Netlify Status](https://api.netlify.com/api/v1/badges/7b9cc568-6c03-4007-8dac-ff34b0833765/deploy-status)](https://app.netlify.com/sites/michadenheijerdev/deploys)
 
 This is my personal website, it uses a theme from [TEMPLATED.co](http://TEMPLATED.co), so if you want to use this theme, download it from their website.
 
