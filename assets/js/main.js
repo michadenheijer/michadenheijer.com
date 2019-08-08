@@ -61,7 +61,7 @@
                 offset: $height
             });
         }
-        $('#menu').append('<a href="#menu" class="close"></a>').appendTo($body).panel({
+        $('#menu').append('<a href="#menu" class="close" onclick="if(window.closeMenu){closeMenu()}"></a>').appendTo($body).panel({
             delay: 500,
             hideOnClick: true,
             hideOnSwipe: true,

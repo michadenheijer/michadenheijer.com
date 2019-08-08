@@ -12,6 +12,10 @@ $(document).ready(function () {
 });
 
 $("#button-close").click(function () {
+    if (window.Modernizr && !window.Modernizr.csstransistions) {
+        $("#lang-message").fadeOut(800);
+        return;
+    }
     message.style.transition = '0.8s';
     message.style.opacity = 0;
     setTimeout(function () {
