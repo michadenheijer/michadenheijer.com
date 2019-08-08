@@ -41,6 +41,9 @@
                 event.stopPropagation();
             }
             config.target.removeClass(config.visibleClass);
+            if (window.closeMenu) {
+                closeMenu()
+            }
             window.setTimeout(function () {
                 if (config.resetScroll) $this.scrollTop(0);
                 if (config.resetForms) $this.find('form').each(function () {
