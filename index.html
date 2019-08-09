@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 
-<html lang="en">
+<html dir="ltr" lang="en">
 
 <head>
     <title>Micha den Heijer | Home</title>
@@ -230,20 +230,9 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.4.1/dist/jquery.min.js,npm/jquery.scrollex@0.2.1/jquery.scrollex.min.js,gh/ajlkn/skel@3.0.1/dist/skel.min.js" crossorigin="anonymous"></script>
     <script type="text/javascript">
-        var elem = "CSS1Compat" === document.compatMode ? document.documentElement : document.body,
-            width = elem.clientWidth,
-            section = document.getElementsByClassName("style3");
-
-        function changeBg(e) {
-            for (i = 0; i < section.length; i++) section[i].setAttribute("data-bg", e)
-        }
-
-        function canUseWebP() {
-            var e = document.createElement("canvas");
-            return !(!e.getContext || !e.getContext("2d")) && 0 == e.toDataURL("image/webp").indexOf("data:image/webp")
-        }
-        width < 600 ? canUseWebP() ? changeBg('url("/images/bg-400.webp")') : changeBg('url("/images/bg-400.jpg")') : width < 1e3 ? canUseWebP() ? changeBg('url("/images/bg-800.webp")') : changeBg('url("/images/bg-800.jpg")') : width < 1400 ? canUseWebP() ? changeBg('url("/images/bg-1280.webp")') : changeBg('url("/images/bg-1280.jpg")') : canUseWebP() ? changeBg('url("/images/bg.webp")') : changeBg('url("/images/bg.jpg")'), window.lazyLoadOptions = {
-            elements_selector: ".lazy"
+        window.lazyLoadOptions = {
+            elements_selector: ".lazy",
+            use_native: !0
         };
     </script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js" async></script>
@@ -251,6 +240,7 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/language-nl.js"></script>
+    <script src="assets/js/webp.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Taviraj:300,400,700&display=swap" rel="stylesheet">
     <!--[if IE 9]>
         <script src="/assets/js/ie9.js"></script>
