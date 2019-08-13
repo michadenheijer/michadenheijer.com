@@ -5,10 +5,20 @@
   Referrer-Policy: strict-origin-when-cross-origin
   X-Content-Type-Options: nosniff
   Connection: keep-alive
-  Report-To: {"group":"default","max_age":31536000,"endpoints":[{"url":"https://michadenheijer.report-uri.com/a/d/g"}],"include_subdomains":true}
-  NEL: {"report_to":"default","max_age":31536000,"include_subdomains":true}
   Feature-Policy: geolocation 'none'; autoplay 'none'; camera 'none'; fullscreen 'none'; microphone 'none'; midi 'none'; vr 'none'
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://*.cloudfront.net https://www.googletagmanager.com https://www.google-analytics.com data:; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://*.cloudfront.net https://cdn.jsdelivr.net; img-src 'self' https://*.cloudfront.net https://www.google-analytics.com https://googletagmanager.com; media-src 'self' https://*.cloudfront.net; frame-src https://www.googletagmanager.com; font-src 'self' fonts.gstatic.com https://*.cloudfront.net data:; connect-src https://www.google-analytics.com; report-uri https://michadenheijer.report-uri.com/r/d/csp/enforce; report-to default
-  X-Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://*.cloudfront.net https://www.googletagmanager.com https://www.google-analytics.com data:; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://*.cloudfront.net https://cdn.jsdelivr.net; img-src 'self' https://*.cloudfront.net https://www.google-analytics.com https://www.googletagmanager.com; media-src 'self' https://*.cloudfront.net; frame-src https://www.googletagmanager.com; font-src 'self' fonts.gstatic.com https://*.cloudfront.net data:; connect-src https://www.google-analytics.com; report-uri https://michadenheijer.report-uri.com/r/d/csp/enforce; report-to default
-  X-WebKit-CSP: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://*.cloudfront.net https://www.googletagmanager.com https://www.google-analytics.com; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://*.cloudfront.net https://cdn.jsdelivr.net; img-src 'self' https://*.cloudfront.net https://www.google-analytics.com https://www.googletagmanager.com data:; media-src 'self' https://*.cloudfront.net; frame-src https://www.googletagmanager.com; font-src 'self' fonts.gstatic.com https://*.cloudfront.net data:; connect-src https://www.google-analytics.com; report-uri https://michadenheijer.report-uri.com/r/d/csp/enforce; report-to default
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://*.cloudfront.net https://www.googletagmanager.com https://www.google-analytics.com data:; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://*.cloudfront.net https://cdn.jsdelivr.net; img-src 'self' https://*.cloudfront.net https://www.google-analytics.com https://googletagmanager.com; media-src 'self' https://*.cloudfront.net; frame-src https://www.googletagmanager.com; font-src 'self' fonts.gstatic.com https://*.cloudfront.net data:; connect-src https://www.google-analytics.com
+  X-Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://*.cloudfront.net https://www.googletagmanager.com https://www.google-analytics.com data:; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://*.cloudfront.net https://cdn.jsdelivr.net; img-src 'self' https://*.cloudfront.net https://www.google-analytics.com https://www.googletagmanager.com; media-src 'self' https://*.cloudfront.net; frame-src https://www.googletagmanager.com; font-src 'self' fonts.gstatic.com https://*.cloudfront.net data:; connect-src https://www.google-analytics.com
+  X-WebKit-CSP: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://*.cloudfront.net https://www.googletagmanager.com https://www.google-analytics.com; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://*.cloudfront.net https://cdn.jsdelivr.net; img-src 'self' https://*.cloudfront.net https://www.google-analytics.com https://www.googletagmanager.com data:; media-src 'self' https://*.cloudfront.net; frame-src https://www.googletagmanager.com; font-src 'self' fonts.gstatic.com https://*.cloudfront.net data:; connect-src https://www.google-analytics.com
   X-Permitted-Cross-Domain-Policies: none
+
+/*.html
+  Cache-Control: public, max-age=300
+
+/*.jpg
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+  
+/*.webp
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+  
+/favicon.ico
+  Cache-Control: public, max-age=31556926, stale-while-revalidate=31556926
