@@ -7,6 +7,15 @@
 /assets/css/main20062018.css /assets/css/main.css 301
 /projects /my-projects 301
 /projects/ /my-projects 301
+
+/profile.webp /images/profile.webp 200
+/profile* /images/profile.jpg 200
+/profile-full.webp /images/profile-full.webp 200
+/profile-full* /images/profile-full.jpg
+/images/micha-den-heijer.* /images/profile.jpg 200
+/micha-den-heijer.* /images/profile.jpg 200
+
+
 http://michadenheijerdev.netlify.com/* https://michadenheijer.com/:splat 301!
 https://michadenheijerdev.netlify.com/* https://michadenheijer.com/:splat 301!
 
