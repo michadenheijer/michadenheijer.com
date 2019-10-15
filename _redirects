@@ -10,6 +10,8 @@
 
 /profile.webp /images/profile.webp 200
 /profile* /images/profile.jpg 200
+/profiel.webp /images/profile.webp 200
+/profiel* /images/profile.jpg 200
 /profile-full.webp /images/profile-full.webp 200
 /profile-full* /images/profile-full.jpg
 /images/micha-den-heijer.* /images/profile.jpg 200
