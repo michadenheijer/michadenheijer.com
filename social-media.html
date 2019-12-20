@@ -48,7 +48,6 @@
                 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-NDB8B6K');
-
     </script>
 </head>
 
@@ -93,7 +92,8 @@
                     </header>
                     <hr />
                     <h3>Professional accounts</h3>
-                    <p>Here are all of my professional/work related accounts. I don't use all of them everyday, but I'm very likely to look there weekly, so if you want to contact me you can use these accounts. If you want the quickest response, please use email or the form below.</p>
+                    <p>Here are all of my professional/work related accounts. I don't use all of them everyday, but I'm very likely to look there weekly, so if you want to contact me you can use these accounts. If you want the quickest response, please use
+                        email or the form below.</p>
                     <ul class="actions">
                         <li><a href="https://www.linkedin.com/in/michadenheijer" class="button special icon fa-linkedin" target="=_blank">LinkedIn</a></li>
                         <li><a href="https://github.com/michadenheijer" class="button special icon fa-github" target="=_blank">GitHub</a></li>
@@ -121,33 +121,34 @@
                     <div class="content">
                         <h2 class="align-center">Get in Touch</h2>
                         <hr />
-                        <form data-netlify="true" method="POST" id="get-in-touch" action="/send">
+                        <form data-netlify="true" method="POST" id="get-in-touch" action="/send" data-netlify-recaptcha="true">
                             <div class="field half first">
-                                <label for="name">Naam</label>
-                                <input name="name" id="name" type="text" placeholder="Jouw naam">
+                                <label for="name">Name</label>
+                                <input name="name" id="name" type="text" placeholder="Your name">
                             </div>
                             <div class="field half">
                                 <label for="email">Email</label>
-                                <input name="reply_to" id="email" type="email" placeholder="Jouw email address">
+                                <input name="reply_to" id="email" type="email" placeholder="Your email adress">
                             </div>
                             <div class="field">
-                                <label for="dept">Reden voor contact</label>
+                                <label for="dept">Reason</label>
                                 <div class="select-wrapper">
                                     <select name="subject" id="dept">
-                                        <option value="">- Opties -</option>
-                                        <option value="Ads">Reclame</option>
-                                        <option value="Business">Zaken deal</option>
-                                        <option value="Question">Vraag</option>
-                                        <option value="Other">Overig</option>
+                                        <option value="">- Options -</option>
+                                        <option value="Ads">Ads</option>
+                                        <option value="Business">Business</option>
+                                        <option value="Question">Question</option>
+                                        <option value="Other">Other</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="field">
-                                <label for="message">Bericht</label>
-                                <textarea name="text" id="message" rows="6" placeholder="Bericht"></textarea>
+                                <label for="message">Message</label>
+                                <textarea name="text" id="message" rows="6" placeholder="Message"></textarea>
                             </div>
+                            <div data-netlify-recaptcha="true"></div>
                             <ul class="actions align-center">
-                                <li><input value="Verstuur bericht" class="button special" type="submit"></li>
+                                <li><input value="Send" class="button special" type="submit"></li>
                             </ul>
                         </form>
                     </div>

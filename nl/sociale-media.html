@@ -48,7 +48,6 @@
                 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-NDB8B6K');
-
     </script>
 </head>
 
@@ -93,7 +92,8 @@
                     </header>
                     <hr />
                     <h3>Professionele accounts</h3>
-                    <p>Hier zijn al mijn professionele/werk gerelateerde accounts. Ik gebruik ze niet allemaal dagelijks, maar het is zeer waarschijnlijk dat ik er wel wekelijks er op kijk, dus als je contact met me wilt opnemen, dan kan je het via deze accounts doen. Als je het snelst antwoord hebben, gebruik email of het fomulier hieronder.</p>
+                    <p>Hier zijn al mijn professionele/werk gerelateerde accounts. Ik gebruik ze niet allemaal dagelijks, maar het is zeer waarschijnlijk dat ik er wel wekelijks er op kijk, dus als je contact met me wilt opnemen, dan kan je het via deze
+                        accounts doen. Als je het snelst antwoord hebben, gebruik email of het fomulier hieronder.</p>
                     <ul class="actions">
                         <li><a href="https://www.linkedin.com/in/michadenheijer" class="button special icon fa-linkedin" target="=_blank">LinkedIn</a></li>
                         <li><a href="https://github.com/michadenheijer" class="button special icon fa-github" target="=_blank">GitHub</a></li>
@@ -119,35 +119,36 @@
             <section>
                 <div class="box">
                     <div class="content">
-                        <h2 class="align-center">Get in Touch</h2>
+                        <h2 class="align-center">Contact</h2>
                         <hr />
-                        <form data-netlify="true" method="POST" id="get-in-touch" action="/send">
+                        <form data-netlify="true" method="POST" id="get-in-touch" action="/send" data-netlify-recaptcha="true">
                             <div class="field half first">
-                                <label for="name">Name</label>
-                                <input name="name" id="name" type="text" placeholder="Your name">
+                                <label for="name">Naam</label>
+                                <input name="name" id="name" type="text" placeholder="Jouw naam">
                             </div>
                             <div class="field half">
                                 <label for="email">Email</label>
-                                <input name="reply_to" id="email" type="email" placeholder="Your email address">
+                                <input name="reply_to" id="email" type="email" placeholder="Jouw email adres">
                             </div>
                             <div class="field">
-                                <label for="dept">Reason for contact</label>
+                                <label for="dept">Reden voor contact</label>
                                 <div class="select-wrapper">
                                     <select name="subject" id="dept">
-                                        <option value="">- Category -</option>
-                                        <option value="Ads">Ad</option>
-                                        <option value="Business">Business offer</option>
-                                        <option value="Question">Question</option>
-                                        <option value="Other">Other</option>
+                                        <option value="">- Optie -</option>
+                                        <option value="Ads">Reclame</option>
+                                        <option value="Business">Zaken</option>
+                                        <option value="Question">Vraag</option>
+                                        <option value="Other">Overig</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="field">
-                                <label for="message">Message</label>
-                                <textarea name="text" id="message" rows="6" placeholder="Message"></textarea>
+                                <label for="message">Bericht</label>
+                                <textarea name="text" id="message" rows="6" placeholder="Bericht"></textarea>
                             </div>
+                            <div data-netlify-recaptcha="true"></div>
                             <ul class="actions align-center">
-                                <li><input value="Send message" class="button special" type="submit"></li>
+                                <li><input value="Verstuur" class="button special" type="submit"></li>
                             </ul>
                         </form>
                     </div>
