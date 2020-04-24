@@ -1,24 +1,18 @@
 /pinguins https://pinguins.michadenheijer.com/ 301
 /crosspointapp https://crosspoint.michadenheijer.com/ 301
 /www.cyberuitleg.nl https://cyberuitleg.nl/ 302
-/projecten /nl/projecten 301
-/sociale-media /nl/sociale-media 301
-/assets/css/main16062018.css /assets/css/main.css 301
-/assets/css/main20062018.css /assets/css/main.css 301
-/projects /my-projects 301
-/projects/ /my-projects 301
 
-/profile.webp /images/profile.webp 200
-/profile* /images/profile.jpg 200
-/profiel.webp /images/profile.webp 200
-/profiel* /images/profile.jpg 200
-/profile-full.webp /images/profile-full.webp 200
-/profile-full* /images/profile-full.jpg
-/images/micha-den-heijer.* /images/profile.jpg 200
-/micha-den-heijer.* /images/profile.jpg 200
+/profile* /images/about.jpg 200
+/profiel* /images/about.jpg 200
+/profile-full* /images/about.jpg
+/images/micha-den-heijer.* /images/about.jpg 200
+/micha-den-heijer.* /images/about.jpg 200
+/images/profile.* /images/about.jpg 200
 
 
-http://michadenheijerdev.netlify.com/* https://michadenheijer.com/:splat 301!
-https://michadenheijerdev.netlify.com/* https://michadenheijer.com/:splat 301!
+http://michadenheijerdev.netlify.com/* https://michadenheijer.com/ 301!
+https://michadenheijerdev.netlify.com/* https://michadenheijer.com/ 301!
+http://michadenheijerdev.netlify.app/* https://michadenheijer.com/ 301!
+https://michadenheijerdev.netlify.app/* https://michadenheijer.com/ 301!
 
-/* /error/404.html 404
+/* / 404

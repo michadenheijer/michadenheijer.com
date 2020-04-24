@@ -1,0 +1,75 @@
+:root {
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+}
+
+.d-flex {
+    word-wrap: break-word
+}
+
+@media (max-height: 600px) and (min-width: 992px) {
+    .mouse {
+        bottom: 60px;
+    }
+}
+
+@media (max-height: 450px) and (min-width: 992px) {
+    .mouse {
+        bottom: 30px;
+    }
+}
+
+@media (max-height: 390px) and (min-width: 992px) {
+    .mouse {
+        display: none
+    }
+}
+
+@media (max-height: 830px) and (max-width: 992px) {
+    .mouse {
+        bottom: 60px;
+    }
+}
+
+@media (max-height: 680px) and (min-width: 768px) and (max-width: 992px) {
+    .mouse {
+        bottom: 30px;
+    }
+}
+
+@media (max-height: 610px) and (min-width: 768px) and (max-width: 992px) {
+    .mouse {
+        display: none
+    }
+}
+
+@media (max-height: 550px) and (max-width: 768px) {
+    .mouse {
+        bottom: 30px
+    }
+}
+
+@media (max-height: 490px) and (max-width: 768px) {
+    .mouse {
+        display: none
+    }
+}
+
+@media (max-width: 380px) {
+    #intro-div {
+        padding-bottom: 7em;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .ftco-navbar-light {
+        position: absolute;
+    }
+
+    .hero-wrap {
+        margin-top: 68.32px;
+    }
+}
