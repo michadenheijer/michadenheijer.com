@@ -487,7 +487,7 @@
                 <div class="col-md-12 heading-section text-center ftco-animate">
                     <h1 class="big big-2">Projects</h1>
                     <h2 class="mb-4" id="js-my-projects">My Projects</h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                    <p>These are some of my projects</p>
                 </div>
             </div>
             <div class="row no-gutters">
@@ -589,7 +589,7 @@
         </div>
     </section>
 
-    <section class="ftco-section ftco-hireme img" data-background="/images/bg_1_optimized" fallback="jpg">
+    <section class="ftco-section ftco-hireme img" data-background="/images/bg_1_optimized" data-fallback="jpg">
         <div class="overlay"></div>
         <div class="container">
             <div class="row justify-content-center">
@@ -765,7 +765,7 @@
     <script async>
         (function(d) {
             d.querySelectorAll("[data-background]").forEach(function(e) {
-                e.style.backgroundImage = "url(" + e.dataset.background + (sessionStorage.getItem("webp") ? ".webp" : e.dataset.fallback) + ")"
+                e.style.backgroundImage = "url(" + e.dataset.background + (sessionStorage.getItem("webp") ? ".webp" : ". " + e.dataset.fallback) + ")"
             });
         })(document)
     </script>
