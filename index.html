@@ -57,6 +57,26 @@
     <meta name="msapplication-TileImage" content="/icons/mstile-144x144.png?v=kPvkx7E8xe">
     <meta name="msapplication-config" content="/icons/browserconfig.xml?v=kPvkx7E8xe">
     <meta name="theme-color" content="#ffffff">
+    <script>
+        ! function(e) {
+            "use strict";
+
+            function s(s) {
+                if (s) {
+                    window.sessionStorage.setItem("webp", !0)
+                }
+            }! function(e) {
+                if (window.sessionStorage && window.sessionStorage.getItem("webp")) s(!0);
+                else {
+                    var t = new Image;
+                    t.onload = t.onerror = function() {
+                        e(2 === t.height)
+                    }, t.src = "data:image/webp;base64,UklGRi4AAABXRUJQVlA4TCEAAAAvAUAAEB8wAiMwAgSSNtse/cXjxyCCmrYNWPwmHRH9jwMA"
+                }
+            }(s)
+        }(document);
+
+    </script>
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -109,8 +129,7 @@
                 <div class="col-md-6 col-lg-6 d-flex">
                     <div class="img-about img d-flex align-items-stretch">
                         <div class="overlay"></div>
-                        <div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/about-optimized.jpg);">
-                        </div>
+                        <div class="img d-flex align-self-stretch align-items-center" data-background="images/about-optimized" data-fallback="jpg"></div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 pl-md-5 py-5">
@@ -438,7 +457,7 @@
             </div>
             <div class="row no-gutters">
                 <div class="col-md-4">
-                    <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/cisstm-satellite-optimized.jpg);">
+                    <div class="project img ftco-animate d-flex justify-content-center align-items-center" data-background="images/cisstm-satellite-optimized" data-fallback="jpg">
                         <div class="overlay"></div>
                         <div class="text text-center p-4">
                             <h3><a href="https://cisstm.nl">CISSTM Satellite</a></h3>
@@ -447,7 +466,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/prgrmmr-website-optimized.png);">
+                    <div class="project img ftco-animate d-flex justify-content-center align-items-center" data-background="images/prgrmmr-website-optimized" data-fallback="png">
                         <div class="overlay"></div>
                         <div class="text text-center p-4">
                             <h3><a href="https://prgrmmr.nl">Prgrmmr Website</a></h3>
@@ -457,7 +476,7 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/nyt-api-code-optimized.png);">
+                    <div class="project img ftco-animate d-flex justify-content-center align-items-center" data-background="images/nyt-api-code-optimized" data-fallback="png">
                         <div class="overlay"></div>
                         <div class="text text-center p-4">
                             <h3><a href="https://github.com/michadenheijer/pynytimes">New York Times Python API</a></h3>
@@ -466,7 +485,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/school-van-leo-website-optimized.png);">
+                    <div class="project img ftco-animate d-flex justify-content-center align-items-center" data-background="images/school-van-leo-website-optimized" data-fallback="png">
                         <div class="overlay"></div>
                         <div class="text text-center p-4">
                             <h3><a href="https://schoolvanleo">School van Leo</a></h3>
@@ -475,7 +494,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/webuntis-to-calendar-code-optimized.png);">
+                    <div class="project img ftco-animate d-flex justify-content-center align-items-center" data-background="images/webuntis-to-calendar-code-optimized" data-fallback="png">
                         <div class="overlay"></div>
                         <div class="text text-center p-4">
                             <h3><a href="https://github.com/michadenheijer/webuntis-to-calendar">Webuntis - Google Calendar</a></h3>
@@ -484,7 +503,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/cyberuitleg-website-optimized.png);">
+                    <div class="project img ftco-animate d-flex justify-content-center align-items-center" data-background="images/cyberuitleg-website-optimized" data-fallback="png">
                         <div class="overlay"></div>
                         <div class="text text-center p-4">
                             <h3><a href="https://cyberuitleg.nl">CyberUitleg</a></h3>
@@ -535,7 +554,7 @@
         </div>
     </section>
 
-    <section class="ftco-section ftco-hireme img" style="background-image: url(images/bg_1.jpg)">
+    <section class="ftco-section ftco-hireme img" data-background="images/bg_1_optimized" fallback="jpg">
         <div class="overlay"></div>
         <div class="container">
             <div class="row justify-content-center">
@@ -628,7 +647,7 @@
                 </div>
 
                 <div class="col-md-6 d-flex">
-                    <div class="img" style="background-image: url(images/about-optimized.jpg);"></div>
+                    <div class="img" data-background="images/about-optimized" data-fallback="jpg"></div>
                 </div>
             </div>
         </div>
@@ -705,7 +724,14 @@
             <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
             <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
 
+    <script async>
+        (function(d) {
+            d.querySelectorAll("[data-background]").forEach(function(e) {
+                e.style.backgroundImage = "url(" + e.dataset.background + (sessionStorage.getItem("webp") ? ".webp" : e.dataset.fallback) + ")"
+            });
+        })(document)
 
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-migrate@3.0.1/dist/jquery-migrate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -721,4 +747,6 @@
 
     <script src="js/main.js" defer></script>
 
-</body></html>
+</body>
+
+</html>
