@@ -26,3 +26,21 @@
   
 /icons/favicon.ico
   Cache-Control: public, max-age=31556926
+  
+/nl/
+  Cache-Control: max-age=3600
+  
+/nl/projecten
+  Cache-Control: max-age=3600
+  
+/nl/sociale-media
+  Cache-Control: max-age=3600
+
+/credits
+  Cache-Control: max-age=3600
+  
+/my-projects
+  Cache-Control: max-age=3600
+  
+/social-media
+  Cache-Control: max-age=3600
