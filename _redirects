@@ -15,4 +15,6 @@ https://michadenheijerdev.netlify.com/* https://michadenheijer.com/ 301!
 http://michadenheijerdev.netlify.app/* https://michadenheijer.com/ 301!
 https://michadenheijerdev.netlify.app/* https://michadenheijer.com/ 301!
 
-/* / 404
+/nl/ / 301
+
+/* /index.html 404
