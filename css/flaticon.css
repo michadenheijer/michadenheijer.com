@@ -6,7 +6,8 @@
 
 	@font-face {
 	    font-family: "Flaticon";
-	    src: url("../fonts/flaticon/font/Flaticon.woff") format("woff");
+	    src: url("../fonts/flaticon/font/Flaticon-optimized.woff2") format("woff2"),
+	        url("../fonts/flaticon/font/Flaticon-optimized.woff") format("woff");
 	    font-weight: normal;
 	    font-style: normal;
 	}
@@ -36,10 +37,6 @@
 
 	.flaticon-ideas:before {
 	    content: "\f100";
-	}
-
-	.flaticon-flasks:before {
-	    content: "\f101";
 	}
 
 	.flaticon-analysis:before {

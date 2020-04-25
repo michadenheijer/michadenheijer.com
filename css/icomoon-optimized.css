@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon/icomoon-optimized.woff2?6tt51o') format('woff2'),
+        url('../fonts/icomoon/icomoon-optimized.woff?6tt51o') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-location-arrow:before {
+    content: "\f124";
+}
+
+.icon-phone2:before {
+    content: "\e0cd";
+}
+
+.icon-paper-plane:before {
+    content: "\f1d8";
+}
+
+.icon-send:before {
+    content: "\f1d8";
+}
+
+.icon-paper-plane-o:before {
+    content: "\f1d9";
+}
+
+.icon-send-o:before {
+    content: "\f1d9";
+}
+
+.icon-globe:before {
+    content: "\f0ac";
+}
+
+.icon-twitter:before {
+    content: "\f099";
+}
+
+.icon-linkedin:before {
+    content: "\f0e1";
+}
+
+.icon-instagram:before {
+    content: "\f16d";
+}
+
+.icon-github:before {
+    content: "\f09b";
+}
+
+.icon-long-arrow-right:before {
+    content: "\f178";
+}
+
+.icon-map-marker:before {
+    content: "\f041";
+}
+
+.icon-phone:before {
+    content: "\f095";
+}
+
+.icon-envelope:before {
+    content: "\f0e0";
+}
+
+.icon-heart:before {
+    content: "\f004";
+}
