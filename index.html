@@ -57,14 +57,34 @@
     <meta name="msapplication-TileImage" content="/icons/mstile-144x144.png?v=kPvkx7E8xe">
     <meta name="msapplication-config" content="/icons/browserconfig.xml?v=kPvkx7E8xe">
     <meta name="theme-color" content="#ffffff">
-    <script>
+    <script async>
         ! function(e) {
             "use strict";
 
+            function p(i, s) {
+                i.forEach(function(o) {
+                    var l = e.createElement("link");
+                    l.rel = "preload";
+                    l.as = "image";
+                    l.href = s ? o.replace(/\.[^/.]+$/, ".webp") : o;
+                    e.head.appendChild(l)
+                })
+
+            }
+
             function s(s) {
                 if (s) {
-                    window.sessionStorage.setItem("webp", !0)
+                    window.sessionStorage.setItem("webp", !0);
                 }
+                p(["images/about-optimized.jpg",
+                    "images/cisstm-satellite-optimized.jpg",
+                    "images/prgrmmr-website-optimized.png",
+                    "images/nyt-api-code-optimized.png",
+                    "images/school-van-leo-website-optimized.png",
+                    "images/webuntis-to-calendar-code-optimized.png",
+                    "images/cyberuitleg-website-optimized.png",
+                    "images/bg_1_optimized.jpg"
+                ], s)
             }! function(e) {
                 if (window.sessionStorage && window.sessionStorage.getItem("webp")) s(!0);
                 else {
@@ -79,7 +99,6 @@
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
         <div class="container">
