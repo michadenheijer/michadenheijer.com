@@ -1,6 +1,8 @@
 # MichaDenHeijer.com
 [![Uptime Robot status](https://img.shields.io/uptimerobot/ratio/7/m780835373-dfca08c8bd2fab0cdf3dfa82.svg)](https://uptimerobot.com/) [![Netlify Status](https://api.netlify.com/api/v1/badges/7b9cc568-6c03-4007-8dac-ff34b0833765/deploy-status)](https://app.netlify.com/sites/michadenheijerdev/deploys)
 
+**This is a old version of my website, this is just a backup**
+
 This is my personal website, it uses a theme from [TEMPLATED.co](http://TEMPLATED.co), so if you want to use this theme, download it from their website.
 
 ## Editing
