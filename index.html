@@ -55,6 +55,7 @@
     <meta name="msapplication-config" content="/icons/browserconfig.xml?v=kPvkx7E8xe">
     <meta name="theme-color" content="#ffffff">
     <script async>
+        /*
         ! function(e) {
             "use strict";
 
@@ -91,7 +92,7 @@
                     }, t.src = "data:image/webp;base64,UklGRi4AAABXRUJQVlA4TCEAAAAvAUAAEB8wAiMwAgSSNtse/cXjxyCCmrYNWPwmHRH9jwMA"
                 }
             }(s)
-        }(document);
+        }(document);*/
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-67298154-7"></script>
@@ -765,7 +766,7 @@
     <script async>
         (function(d) {
             d.querySelectorAll("[data-background]").forEach(function(e) {
-                e.style.backgroundImage = "url(" + e.dataset.background + (sessionStorage.getItem("webp") ? ".webp" : ". " + e.dataset.fallback) + ")"
+                e.style.backgroundImage = "url(" + e.dataset.background + (sessionStorage.getItem("webp") ? ".webp" : ". " + e.dataset.fallback) + ")";
             });
         })(document)
     </script>
