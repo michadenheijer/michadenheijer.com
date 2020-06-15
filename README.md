@@ -28,7 +28,7 @@ $ git commit -m "YOUR COMMIT MESSAGE HERE"
 ### Step 4: Push the files to GitHub
 Now you have to upload the files to GitHub.
 ```
-$ git push -u origin master
+$ git push -u origin main
 ```
 
 ## Deploy
