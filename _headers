@@ -1,3 +1,5 @@
+/
+  Link: </css/style.css>; rel=preload; as=style, </css/style-fixes.css>; rel=preload; as=style
 /*
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
   X-Frame-Options: SAMEORIGIN
