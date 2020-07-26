@@ -69,30 +69,10 @@
         ! function(e) {
             "use strict";
 
-            function p(i, s) {
-                i.forEach(function(o) {
-                    var l = e.createElement("link");
-                    l.rel = "preload";
-                    l.as = "image";
-                    l.href = s ? o.replace(/\.[^/.]+$/, ".webp") : o;
-                    e.head.appendChild(l)
-                })
-
-            }
-
             function s(s) {
                 if (s) {
                     window.sessionStorage.setItem("webp", !0);
                 }
-                p(["/images/about-optimized.jpg",
-                    "/images/cisstm-satellite-optimized.jpg",
-                    "/images/prgrmmr-website-optimized.png",
-                    "/images/nyt-api-code-optimized.png",
-                    "/images/school-van-leo-website-optimized.png",
-                    "/images/webuntis-to-calendar-code-optimized.png",
-                    "/images/cyberuitleg-website-optimized.png",
-                    "/images/bg_1_optimized.jpg"
-                ], s)
             }! function(e) {
                 if (window.sessionStorage && window.sessionStorage.getItem("webp")) s(!0);
                 else {
@@ -289,8 +269,7 @@
                                 <span class="date">2019 - Present</span>
                                 <h2>Website Content Writer</h2>
                                 <span class="position">Prgrmmr</span>
-                                <p>I've build my own website that is about programming and technology. Most of this information is already available in English, but it wasn't available in my native language (Dutch), so I decided to help Dutch people get
-                                    into technology and programming.</p>
+                                <p>I've build my own website that is about programming and technology. Most of this information is already available in English, but it wasn't available in my native language (Dutch), so I decided to help Dutch people get into technology and programming.</p>
                             </div>
                         </div>
                         <div class="resume-wrap d-flex ftco-animate">
@@ -301,8 +280,7 @@
                                 <span class="date">2018 - 2020</span>
                                 <h2>Software Developer</h2>
                                 <span class="position">CISSTM</span>
-                                <p>With a group of a few other students we participated in a CanSat competition. The goal of this competition is to build a small satellite (the size of a regular soda can). In these two years we've build a small satellite
-                                    that can triangulate an small object.</p>
+                                <p>With a group of a few other students we participated in a CanSat competition. The goal of this competition is to build a small satellite (the size of a regular soda can). In these two years we've build a small satellite that can triangulate an small object.</p>
                             </div>
                         </div>
                     </div>
@@ -761,8 +739,7 @@
 
                     <p>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy; <span class="js-current-year"></span> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> |
-                        Icons from Flaticon, Icomoon, Ionicons and Open-Iconic
+                        Copyright &copy; <span class="js-current-year"></span> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> | Icons from Flaticon, Icomoon, Ionicons and Open-Iconic
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </p>
                 </div>
@@ -778,13 +755,7 @@
             <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
 
     <script async>
-        (function(d) {
-            window.addEventListener("load", function() {
-                d.querySelectorAll("[data-background]").forEach(function(e) {
-                    e.style.backgroundImage = "url(" + e.dataset.background + (sessionStorage.getItem("webp") ? ".webp" : "." + e.dataset.fallback) + ")";
-                });
-            });
-        })(document)
+        !function(e){var t=new IntersectionObserver(function(e){e.forEach(function(e){!0===e.isIntersecting&&(console.log(e),(e=e.target).style.backgroundImage="url("+e.dataset.background+(sessionStorage.getItem("webp")?".webp":"."+e.dataset.fallback)+")")})},{threshold:[0]});Array.from(e.querySelectorAll("[data-background]")).forEach(function(e){t.observe(e)})}(document);
     </script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-migrate@3.0.1/dist/jquery-migrate.min.js"></script>
