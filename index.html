@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Hey, I'm Micha den Heijer. I've just completed Dutch High School and I'll be attending VU University Amsterdam soon!">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/open-iconic@1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=" crossorigin="anonymous" media="print" onload="this.media='all'">
@@ -102,7 +103,6 @@
                 }
             }(s)
         }(document);
-
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-67298154-7"></script>
@@ -122,7 +122,6 @@
             'allow_ad_personalization_signals': false,
             'link_attribution': false
         });
-
     </script>
 
 </head>
@@ -290,7 +289,8 @@
                                 <span class="date">2019 - Present</span>
                                 <h2>Website Content Writer</h2>
                                 <span class="position">Prgrmmr</span>
-                                <p>I've build my own website that is about programming and technology. Most of this information is already available in English, but it wasn't available in my native language (Dutch), so I decided to help Dutch people get into technology and programming.</p>
+                                <p>I've build my own website that is about programming and technology. Most of this information is already available in English, but it wasn't available in my native language (Dutch), so I decided to help Dutch people get
+                                    into technology and programming.</p>
                             </div>
                         </div>
                         <div class="resume-wrap d-flex ftco-animate">
@@ -301,7 +301,8 @@
                                 <span class="date">2018 - 2020</span>
                                 <h2>Software Developer</h2>
                                 <span class="position">CISSTM</span>
-                                <p>With a group of a few other students we participated in a CanSat competition. The goal of this competition is to build a small satellite (the size of a regular soda can). In these two years we've build a small satellite that can triangulate an small object.</p>
+                                <p>With a group of a few other students we participated in a CanSat competition. The goal of this competition is to build a small satellite (the size of a regular soda can). In these two years we've build a small satellite
+                                    that can triangulate an small object.</p>
                             </div>
                         </div>
                     </div>
@@ -760,7 +761,8 @@
 
                     <p>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy; <span class="js-current-year"></span> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> | Icons from Flaticon, Icomoon, Ionicons and Open-Iconic
+                        Copyright &copy; <span class="js-current-year"></span> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> |
+                        Icons from Flaticon, Icomoon, Ionicons and Open-Iconic
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </p>
                 </div>
@@ -777,12 +779,12 @@
 
     <script async>
         (function(d) {
-            console.log("here")
-            d.querySelectorAll("[data-background]").forEach(function(e) {
-                e.style.backgroundImage = "url(" + e.dataset.background + (sessionStorage.getItem("webp") ? ".webp" : "." + e.dataset.fallback) + ")";
+            window.addEventListener("load", function() {
+                d.querySelectorAll("[data-background]").forEach(function(e) {
+                    e.style.backgroundImage = "url(" + e.dataset.background + (sessionStorage.getItem("webp") ? ".webp" : "." + e.dataset.fallback) + ")";
+                });
             });
         })(document)
-
     </script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-migrate@3.0.1/dist/jquery-migrate.min.js"></script>
